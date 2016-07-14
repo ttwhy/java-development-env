@@ -49,6 +49,7 @@ Vagrant.configure("2") do |config|
   
   #sync
   config.vm.synced_folder "environment/workspace", "/home/vagrant/workspace"
+  config.vm.synced_folder "C:/Users/Riewe/Downloads", "/mnt/archive"
 
 
   # Provider-specific configuration so you can fine-tune various
@@ -107,7 +108,7 @@ Vagrant.configure("2") do |config|
      echo 'Upgrading to the latest System...'
      pacman -Syu --noconfirm
      echo 'Installing additional Software'
-     pacman -S eclipse-java jdk8-openjdk xorg-xinit awesome chromium xterm xfce4-terminal visualvm java-jdepend maven gradle --noconfirm --noscriptlet 
+     pacman -S eclipse-java jdk8-openjdk xorg-xinit awesome chromium xterm xfce4-terminal apache-ant junit visualvm java-jdepend maven gradle --noconfirm --noscriptlet 
 
      # pacman -S docker npm 
 
@@ -117,8 +118,12 @@ Vagrant.configure("2") do |config|
      mkdir -p /etc/systemd/system/getty@tty1.service.d/
      mkdir /home/vagrant/.config/awesome/ -p
      mkdir /home/vagrant/workspace -p
+     mkdir /mnt/archive -p
+     mkdir /srv/ecommerce -p
      cp -R /vagrant/environment/.eclipse/ /home/vagrant/
      chown vagrant:vagrant /home/vagrant/ -R
+     chown vagrant:vagrant /mnt/archive -R
+     chown vagrant:vagrant /srv/ecommerce -R
 
 echo "[Service]
 ExecStart=

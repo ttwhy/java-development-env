@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="create-hybris-server" basedir=".">
+
+    <target name="init">
+        <property file="project.properties"/>
+        <property file="default.properties"/>
+
+        <condition property="usesVersionControll">
+            <available file="${ydestination}/.git" type="dir"/>
+        </condition>
+
+    </target>
+
+    <target name="create-hybris-server">
+        <antcall target="extract"/>
+        <antcall target="git-pull"/>
+    </target>
+
+    <target name="extract" depends="init">
+        <unzip src="${yziplocation}${yzip}" dest="${ydestination}">
+            <patternset>
+                <include name="hybris/**"/>
+            </patternset>
+        </unzip>
+    </target>
+
+    <target name="git-init" depends="init" unless="usesVersionControll">
+         <exec executable="git" dir="${ydestination}">
+            <arg value="init"/>
+        </exec>
+       
+        <exec executable="git" dir="${ydestination}">
+            <arg value="remote"/>
+            <arg value="add"/>
+            <arg value="origin"/>
+            <arg value="${repository.url}"/>
+        </exec>
+
+    </target>
+
+    <target name="git-pull" depends="git-init">
+        <exec executable="git" dir="${ydestination}">
+            <arg value="pull"/>
+            <arg value="origin"/>
+            <arg value="${repository.branch}"/>
+        </exec>
+    </target>
+
+</project>
