@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<feature
+	id="org.eclipse.babel.nls_rt.rap_de"
+	label="Babel Language Pack for rt.rap in German (90.69%)"
+	image="eclipse_update_120.jpg"
+	provider-name="%providerName"
+	version="4.5.0.v20150804081228">
+	<copyright>
+		%copyright
+	</copyright>
+	<license url="%licenseURL">
+		%license
+	</license>
+	<description>Babel Language Pack for rt.rap in German</description>
+	<plugin fragment="true" id="org.eclipse.rap.design.example.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2592" install-size="2592" />
+	<plugin fragment="true" id="org.eclipse.rap.doc.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1379" install-size="1379" />
+	<plugin fragment="true" id="org.eclipse.rap.filedialog.demo.examples.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1377" install-size="1377" />
+	<plugin fragment="true" id="org.eclipse.rap.filedialog.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1377" install-size="1377" />
+	<plugin fragment="true" id="org.eclipse.rap.fileupload.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1394" install-size="1394" />
+	<plugin fragment="true" id="org.eclipse.rap.jface.databinding.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1406" install-size="1406" />
+	<plugin fragment="true" id="org.eclipse.rap.jface.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="5834" install-size="5834" />
+	<plugin fragment="true" id="org.eclipse.rap.nebula.jface.gridviewer.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1377" install-size="1377" />
+	<plugin fragment="true" id="org.eclipse.rap.nebula.widgets.grid.demo.examples.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1383" install-size="1383" />
+	<plugin fragment="true" id="org.eclipse.rap.nebula.widgets.grid.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1373" install-size="1373" />
+	<plugin fragment="true" id="org.eclipse.rap.rwt.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="5582" install-size="5582" />
+	<plugin fragment="true" id="org.eclipse.rap.rwt.osgi.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1367" install-size="1367" />
+	<plugin fragment="true" id="org.eclipse.rap.rwt.testfixture.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1372" install-size="1372" />
+	<plugin fragment="true" id="org.eclipse.rap.test.all.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1367" install-size="1367" />
+	<plugin fragment="true" id="org.eclipse.rap.tools.intro.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2821" install-size="2821" />
+	<plugin fragment="true" id="org.eclipse.rap.tools.launch.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="3302" install-size="3302" />
+	<plugin fragment="true" id="org.eclipse.rap.tools.launch.rwt.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1580" install-size="1580" />
+	<plugin fragment="true" id="org.eclipse.rap.tools.templates.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2703" install-size="2703" />
+	<plugin fragment="true" id="org.eclipse.rap.ui.cheatsheets.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="6017" install-size="6017" />
+	<plugin fragment="true" id="org.eclipse.rap.ui.forms.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2392" install-size="2392" />
+	<plugin fragment="true" id="org.eclipse.rap.ui.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="6120" install-size="6120" />
+	<plugin fragment="true" id="org.eclipse.rap.ui.views.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="3166" install-size="3166" />
+	<plugin fragment="true" id="org.eclipse.rap.ui.workbench.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="29712" install-size="29712" />
+</feature>

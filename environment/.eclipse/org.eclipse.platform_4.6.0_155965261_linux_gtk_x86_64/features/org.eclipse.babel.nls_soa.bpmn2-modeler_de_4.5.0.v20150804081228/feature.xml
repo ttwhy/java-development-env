@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<feature
+	id="org.eclipse.babel.nls_soa.bpmn2-modeler_de"
+	label="Babel Language Pack for soa.bpmn2-modeler in German (58%)"
+	image="eclipse_update_120.jpg"
+	provider-name="%providerName"
+	version="4.5.0.v20150804081228">
+	<copyright>
+		%copyright
+	</copyright>
+	<license url="%licenseURL">
+		%license
+	</license>
+	<description>Babel Language Pack for soa.bpmn2-modeler in German</description>
+	<plugin fragment="true" id="org.eclipse.bpmn2.modeler.core.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="18974" install-size="18974" />
+	<plugin fragment="true" id="org.eclipse.bpmn2.modeler.runtime.jboss.jbpm5.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="12936" install-size="12936" />
+	<plugin fragment="true" id="org.eclipse.bpmn2.modeler.ui.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="19503" install-size="19503" />
+	<plugin fragment="true" id="org.eclipse.bpmn2.modeler.wsil.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="3102" install-size="3102" />
+</feature>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<feature
+	id="org.eclipse.babel.nls_technology.packaging_de"
+	label="Babel Language Pack for technology.packaging in German (32.41%)"
+	image="eclipse_update_120.jpg"
+	provider-name="%providerName"
+	version="4.5.0.v20150804081228">
+	<copyright>
+		%copyright
+	</copyright>
+	<license url="%licenseURL">
+		%license
+	</license>
+	<description>Babel Language Pack for technology.packaging in German</description>
+	<plugin fragment="true" id="org.eclipse.epp.logging.aeri.ui.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="3322" install-size="3322" />
+	<plugin fragment="true" id="org.eclipse.epp.package.committers.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2845" install-size="2845" />
+	<plugin fragment="true" id="org.eclipse.epp.package.jee.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1612" install-size="1612" />
+</feature>

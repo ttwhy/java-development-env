@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<feature
+	id="org.eclipse.babel.nls_modeling.emf_de"
+	label="Babel Language Pack for modeling.emf in German (57.58%)"
+	image="eclipse_update_120.jpg"
+	provider-name="%providerName"
+	version="4.5.0.v20150804081228">
+	<copyright>
+		%copyright
+	</copyright>
+	<license url="%licenseURL">
+		%license
+	</license>
+	<description>Babel Language Pack for modeling.emf in German</description>
+	<plugin fragment="true" id="org.eclipse.emf.activities.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1605" install-size="1605" />
+	<plugin fragment="true" id="org.eclipse.emf.all-feature.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1388" install-size="1388" />
+	<plugin fragment="true" id="org.eclipse.emf.ant.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1395" install-size="1395" />
+	<plugin fragment="true" id="org.eclipse.emf.base-feature.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1389" install-size="1389" />
+	<plugin fragment="true" id="org.eclipse.emf.cheatsheets.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1712" install-size="1712" />
+	<plugin fragment="true" id="org.eclipse.emf.codegen.ecore.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="3034" install-size="3034" />
+	<plugin fragment="true" id="org.eclipse.emf.codegen.ecore.ui.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="6516" install-size="6516" />
+	<plugin fragment="true" id="org.eclipse.emf.codegen.ecore.xtext.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1388" install-size="1388" />
+	<plugin fragment="true" id="org.eclipse.emf.codegen.ecore.xtext.ui.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1390" install-size="1390" />
+	<plugin fragment="true" id="org.eclipse.emf.codegen.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2582" install-size="2582" />
+	<plugin fragment="true" id="org.eclipse.emf.codegen.ui.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2069" install-size="2069" />
+	<plugin fragment="true" id="org.eclipse.emf.common.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2428" install-size="2428" />
+	<plugin fragment="true" id="org.eclipse.emf.common.ui.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2524" install-size="2524" />
+	<plugin fragment="true" id="org.eclipse.emf.converter.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2350" install-size="2350" />
+	<plugin fragment="true" id="org.eclipse.emf.databinding.edit.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1386" install-size="1386" />
+	<plugin fragment="true" id="org.eclipse.emf.databinding.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1384" install-size="1384" />
+	<plugin fragment="true" id="org.eclipse.emf.doc.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1683" install-size="1683" />
+	<plugin fragment="true" id="org.eclipse.emf.ecore.change.edit.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1897" install-size="1897" />
+	<plugin fragment="true" id="org.eclipse.emf.ecore.change.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1413" install-size="1413" />
+	<plugin fragment="true" id="org.eclipse.emf.ecore.edit.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2295" install-size="2295" />
+	<plugin fragment="true" id="org.eclipse.emf.ecore.editor.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2543" install-size="2543" />
+	<plugin fragment="true" id="org.eclipse.emf.ecore.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="3797" install-size="3797" />
+	<plugin fragment="true" id="org.eclipse.emf.ecore.xcore.edit.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2334" install-size="2334" />
+	<plugin fragment="true" id="org.eclipse.emf.ecore.xcore.exporter.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1388" install-size="1388" />
+	<plugin fragment="true" id="org.eclipse.emf.ecore.xcore.importer.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1388" install-size="1388" />
+	<plugin fragment="true" id="org.eclipse.emf.ecore.xcore.lib.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1387" install-size="1387" />
+	<plugin fragment="true" id="org.eclipse.emf.ecore.xcore.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1617" install-size="1617" />
+	<plugin fragment="true" id="org.eclipse.emf.ecore.xcore.ui.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1642" install-size="1642" />
+	<plugin fragment="true" id="org.eclipse.emf.ecore.xmi.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1457" install-size="1457" />
+	<plugin fragment="true" id="org.eclipse.emf.edit.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2458" install-size="2458" />
+	<plugin fragment="true" id="org.eclipse.emf.edit.ui.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2557" install-size="2557" />
+	<plugin fragment="true" id="org.eclipse.emf.example.installer.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1446" install-size="1446" />
+	<plugin fragment="true" id="org.eclipse.emf.examples.databinding.project.core.model.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1404" install-size="1404" />
+	<plugin fragment="true" id="org.eclipse.emf.examples.databinding.project.core.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1398" install-size="1398" />
+	<plugin fragment="true" id="org.eclipse.emf.examples.databinding.project.ui.rcp.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1434" install-size="1434" />
+	<plugin fragment="true" id="org.eclipse.emf.examples.generator.validator.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1394" install-size="1394" />
+	<plugin fragment="true" id="org.eclipse.emf.examples.jet.article2.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1903" install-size="1903" />
+	<plugin fragment="true" id="org.eclipse.emf.examples.library.edit.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1830" install-size="1830" />
+	<plugin fragment="true" id="org.eclipse.emf.examples.library.editor.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2055" install-size="2055" />
+	<plugin fragment="true" id="org.eclipse.emf.examples.library.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1386" install-size="1386" />
+	<plugin fragment="true" id="org.eclipse.emf.examples.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1648" install-size="1648" />
+	<plugin fragment="true" id="org.eclipse.emf.exporter.html.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1420" install-size="1420" />
+	<plugin fragment="true" id="org.eclipse.emf.exporter.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1427" install-size="1427" />
+	<plugin fragment="true" id="org.eclipse.emf.gwt.common.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1615" install-size="1615" />
+	<plugin fragment="true" id="org.eclipse.emf.gwt.ecore.change.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1388" install-size="1388" />
+	<plugin fragment="true" id="org.eclipse.emf.gwt.ecore.edit.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2031" install-size="2031" />
+	<plugin fragment="true" id="org.eclipse.emf.gwt.ecore.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1383" install-size="1383" />
+	<plugin fragment="true" id="org.eclipse.emf.gwt.edit.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1382" install-size="1382" />
+	<plugin fragment="true" id="org.eclipse.emf.gwt.edit.ui.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1644" install-size="1644" />
+	<plugin fragment="true" id="org.eclipse.emf.gwt.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1379" install-size="1379" />
+	<plugin fragment="true" id="org.eclipse.emf.importer.ecore.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1711" install-size="1711" />
+	<plugin fragment="true" id="org.eclipse.emf.importer.java.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1861" install-size="1861" />
+	<plugin fragment="true" id="org.eclipse.emf.importer.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2374" install-size="2374" />
+	<plugin fragment="true" id="org.eclipse.emf.importer.rose.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="3267" install-size="3267" />
+	<plugin fragment="true" id="org.eclipse.emf.java.edit.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2087" install-size="2087" />
+	<plugin fragment="true" id="org.eclipse.emf.java.editor.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2076" install-size="2076" />
+	<plugin fragment="true" id="org.eclipse.emf.java.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1630" install-size="1630" />
+	<plugin fragment="true" id="org.eclipse.emf.mapping.ecore.editor.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1684" install-size="1684" />
+	<plugin fragment="true" id="org.eclipse.emf.mapping.ecore.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1625" install-size="1625" />
+	<plugin fragment="true" id="org.eclipse.emf.mapping.ecore2ecore.editor.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2457" install-size="2457" />
+	<plugin fragment="true" id="org.eclipse.emf.mapping.ecore2ecore.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1507" install-size="1507" />
+	<plugin fragment="true" id="org.eclipse.emf.mapping.ecore2xml.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1407" install-size="1407" />
+	<plugin fragment="true" id="org.eclipse.emf.mapping.ecore2xml.ui.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2507" install-size="2507" />
+	<plugin fragment="true" id="org.eclipse.emf.mapping.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2497" install-size="2497" />
+	<plugin fragment="true" id="org.eclipse.emf.mapping.ui.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2360" install-size="2360" />
+	<plugin fragment="true" id="org.eclipse.emf.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1629" install-size="1629" />
+	<plugin fragment="true" id="org.eclipse.emf.oda.ecore.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1639" install-size="1639" />
+	<plugin fragment="true" id="org.eclipse.emf.oda.ecore.ui.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1511" install-size="1511" />
+	<plugin fragment="true" id="org.eclipse.emf.oda.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1378" install-size="1378" />
+	<plugin fragment="true" id="org.eclipse.emf.rap.common.ui.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2498" install-size="2498" />
+	<plugin fragment="true" id="org.eclipse.emf.rap.edit.ui.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2301" install-size="2301" />
+	<plugin fragment="true" id="org.eclipse.emf.rap.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1378" install-size="1378" />
+	<plugin fragment="true" id="org.eclipse.emf.releng.buckminster.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1878" install-size="1878" />
+	<plugin fragment="true" id="org.eclipse.emf.test.codegen.ecore.xtext.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1623" install-size="1623" />
+	<plugin fragment="true" id="org.eclipse.emf.test.common.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1964" install-size="1964" />
+	<plugin fragment="true" id="org.eclipse.emf.test.core.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1381" install-size="1381" />
+	<plugin fragment="true" id="org.eclipse.emf.test.databinding.edit.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1390" install-size="1390" />
+	<plugin fragment="true" id="org.eclipse.emf.test.databinding.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1387" install-size="1387" />
+	<plugin fragment="true" id="org.eclipse.emf.test.ecore.xcore.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1387" install-size="1387" />
+	<plugin fragment="true" id="org.eclipse.emf.test.edit.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="2251" install-size="2251" />
+	<plugin fragment="true" id="org.eclipse.emf.test.examples.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1384" install-size="1384" />
+	<plugin fragment="true" id="org.eclipse.emf.test.tools.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="16038" install-size="16038" />
+	<plugin fragment="true" id="org.eclipse.emf.test.xml.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1382" install-size="1382" />
+	<plugin fragment="true" id="org.eclipse.emf.xcore.build-feature.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1393" install-size="1393" />
+	<plugin fragment="true" id="org.eclipse.emf.xcore.releng.nl_de" unpack="false" version="4.5.0.v20150804081228" download-size="1506" install-size="1506" />
+</feature>
