@@ -7,7 +7,10 @@ start the system using
 
     vagrant up
     cd /vagrant
-    vim project.properties # edit specific to your project
+    # edit specific to your project
+    # keep in mind: the exepected repository should contain hybris as within the repository root
+    # by default only the hybris diretory of the hybris suite will be extracted. 
+    vim project.properties 
     ant
     
 After completing the install process restart the system (
