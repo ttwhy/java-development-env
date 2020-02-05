@@ -1,0 +1,114 @@
+- name: Install X
+  hosts: all
+  become: yes
+  become_user: root
+  tasks:
+          - name: x base system
+            apt:
+                name: xinit 
+                state: latest
+
+          - name: window manager
+            apt:
+                    name: awesome
+                    state: latest
+
+          - name: make default window manager
+            command: echo "awesome" > /home/vagrant/.xinitrc
+
+          - name: install basic packages
+            apt:
+                    package: 
+                        - vim
+                        - gnome-terminal
+
+
+- name: web basic debugging
+  hosts: all
+  become: yes
+  become_user: root
+  tasks:
+          - name: install browsers
+            apt: 
+                package:
+                        - firefox
+                        - chromium-browser
+
+- name: setup java development env
+  hosts: all
+  become: yes
+  become_user: root
+  tasks:
+          - name: enable universe repository
+            apt_repository: 
+            #    repo: 'ppa:mmk2410/eclipse-ide-java'
+                repo: "{{ item }}"
+                state: present
+            loop: 
+                - "deb http://de.archive.ubuntu.com/ubuntu {{ ansible_distribution_release|lower }} universe"
+                - "deb http://de.archive.ubuntu.com/ubuntu {{ ansible_distribution_release|lower }}-updates universe"
+                - "deb http://de.archive.ubuntu.com/ubuntu {{ ansible_distribution_release|lower }}-security universe"
+
+          - name: update sources
+            apt:
+                    update_cache: yes
+
+          - name: install java
+            apt:
+                    name: openjdk-8-jdk
+                    state: latest
+
+          - name: install java IDE
+            apt: 
+                    name: eclipse-titan
+                    state: latest
+
+- name: java advanced debuging
+  hosts: all
+  become: yes
+  become_user: root
+  tasks: 
+        - name: install visual VM
+          apt:
+                  name: visualvm
+                  state: latest
+
+        - name: install dceVM
+          apt:
+                  name: openjdk-11-jre-dcevm
+                  state: present
+
+
+
+- name: setup node development env
+  hosts: all
+  become: yes
+  become_user: root
+  tasks:
+          - name: install node js
+            apt:
+                  name: nodejs
+                  state: present
+
+                  #- name: install js editor
+                  #apt:
+                  #name: vscode
+                  #state: latest
+
+          - name: install node package manager
+            package: 
+                name: npm
+                state: latest
+
+
+- name: install docker environement
+  hosts: all
+  become: yes
+  become_user: root
+  tasks:
+          - name: install docker daemon
+            apt:
+                    name: docker
+                    state: present
+
+
