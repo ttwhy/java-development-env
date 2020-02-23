@@ -1,3 +1,16 @@
+- name: Install guest utils
+  hosts: all
+  become: yes
+  become_user: root
+  tasks:
+          - name: install modules
+            apt:
+                    package:
+                            #- virtualbox-guest-dkms
+                            #    - virtualbox-guest-utils
+                            #    - virtualbox-guest-x11  
+                    state: latest
+
 - name: Install X
   hosts: all
   become: yes
