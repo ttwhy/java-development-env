@@ -1,28 +1,15 @@
-- name: Install guest utils
-  hosts: all
-  become: yes
-  become_user: root
-  tasks:
-          - name: install modules
-            apt:
-                    package:
-                            #- virtualbox-guest-dkms
-                            #    - virtualbox-guest-utils
-                            #    - virtualbox-guest-x11  
-                    state: latest
-
 - name: Install X
   hosts: all
   become: yes
   become_user: root
   tasks:
           - name: x base system
-            apt:
-                name: xinit 
+            package:
+                name: xorg-xinit 
                 state: latest
 
           - name: window manager
-            apt:
+            package:
                     name: awesome
                     state: latest
 
@@ -30,10 +17,11 @@
             command: echo "awesome" > /home/vagrant/.xinitrc
 
           - name: install basic packages
-            apt:
-                    package: 
-                        - vim
-                        - gnome-terminal
+            package: 
+                name:
+                  - vim
+                  - gnome-terminal
+                state: latest
 
 
 - name: web basic debugging
@@ -42,38 +30,26 @@
   become_user: root
   tasks:
           - name: install browsers
-            apt: 
-                package:
+            package:
+                    name:
                         - firefox
-                        - chromium-browser
+                        - chromium
+                    state: latest
 
 - name: setup java development env
   hosts: all
   become: yes
   become_user: root
   tasks:
-          - name: enable universe repository
-            apt_repository: 
-            #    repo: 'ppa:mmk2410/eclipse-ide-java'
-                repo: "{{ item }}"
-                state: present
-            loop: 
-                - "deb http://de.archive.ubuntu.com/ubuntu {{ ansible_distribution_release|lower }} universe"
-                - "deb http://de.archive.ubuntu.com/ubuntu {{ ansible_distribution_release|lower }}-updates universe"
-                - "deb http://de.archive.ubuntu.com/ubuntu {{ ansible_distribution_release|lower }}-security universe"
-
-          - name: update sources
-            apt:
-                    update_cache: yes
 
           - name: install java
-            apt:
-                    name: openjdk-8-jdk
+            package:
+                    name: openjdk-src
                     state: latest
 
           - name: install java IDE
-            apt: 
-                    name: eclipse-titan
+            package: 
+                    name: eclipse-java
                     state: latest
 
 - name: java advanced debuging
@@ -82,14 +58,14 @@
   become_user: root
   tasks: 
         - name: install visual VM
-          apt:
+          package:
                   name: visualvm
                   state: latest
 
         - name: install dceVM
-          apt:
-                  name: openjdk-11-jre-dcevm
-                  state: present
+          package:
+                  #name: openjdk-11-jre-dcevm
+                  #state: present
 
 
 
@@ -99,7 +75,7 @@
   become_user: root
   tasks:
           - name: install node js
-            apt:
+            package:
                   name: nodejs
                   state: present
 
@@ -113,6 +89,11 @@
                 name: npm
                 state: latest
 
+- name: js packaging
+  npm: 
+        name: @angular/cli
+        state: latest
+        global: yes
 
 - name: install docker environement
   hosts: all
@@ -120,7 +101,7 @@
   become_user: root
   tasks:
           - name: install docker daemon
-            apt:
+            package:
                     name: docker
                     state: present
 
