@@ -5,8 +5,27 @@
   tasks:
           - name: x base system
             package:
-                name: xorg-xinit 
+                name: 
+                        - xorg-xinit 
+                        - xorg-server
                 state: latest
+
+          - name: removing virtualbox nox modules
+            pacman:
+                name: virtualbox-guest-utils-nox
+                state: absent
+                force: yes
+
+          - name: remove leftovers
+            file:
+                    path: /usr/bin/VBoxClient
+                    state: absent
+
+          - name: adding again the x version
+            pacman:
+                name: virtualbox-guest-utils
+                state: latest
+                update_cache: yes
 
           - name: window manager
             package:
@@ -14,7 +33,7 @@
                     state: latest
 
           - name: make default window manager
-            command: echo "awesome" > /home/vagrant/.xinitrc
+            shell: echo "exec awesome" > ~/.xinitrc
 
           - name: install basic packages
             package: 
@@ -35,6 +54,17 @@
                         - firefox
                         - chromium
                     state: latest
+
+- name: development basics
+  hosts: all
+  become: yes
+  become_user: root
+  tasks: 
+        - name: sourcecode management
+          package: 
+                name: 
+                        - git
+                state: latest
 
 - name: setup java development env
   hosts: all
@@ -90,10 +120,15 @@
                 state: latest
 
 - name: js packaging
-  npm: 
-        name: @angular/cli
-        state: latest
-        global: yes
+  hosts: all
+  become: yes
+  become_user: root
+  tasks: 
+  #- name: angular/cli
+  #        npm:
+  #          name: angular/cli
+  #          state: latest
+  #          global: yes
 
 - name: install docker environement
   hosts: all
